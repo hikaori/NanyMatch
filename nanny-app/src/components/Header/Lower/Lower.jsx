@@ -13,9 +13,9 @@ export default class Lower extends Component{
         <div className="NaviItems">
           {naviItems.map((naviItem) => (
               <NaviItem
-                key={naviItem .title}
-                title={naviItem .title}
-                childs={naviItem .childs}
+                key={naviItem.title}
+                title={naviItem.title}
+                subtitles={naviItem.subtitles}
               />
             ))}
           </div>

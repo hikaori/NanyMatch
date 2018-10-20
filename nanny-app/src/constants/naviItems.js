@@ -2,26 +2,26 @@
  export const naviItems = [
   {
     title: 'About us',
-    childs: ['1111', '2222'],
+    subtitles: ['1111', '2222'],
   },
   {
     title: 'Faind a nanny',
-    childs: ['1111', '2222'],
+    subtitles: ['3333', '4444'],
   },
   {
     title: 'How it works',
-    childs: ['1111', '2222'],
+    subtitles: ['Procedure', 'Sponsoring The Nanny','LMIA Apprication Process','LMIA Apprication Fee'],
   },
   {
     title: 'Fees',
-    childs: ['1111', '2222'],
+    subtitles: ['5555', '66666'],
   },
   {
     title: 'FAQ',
-    childs: ['1111', '2222'],
+    subtitles: ['7777', '88888'],
   },
   {
     title: 'Contact Us',
-    childs: ['1111', '2222'],
+    subtitles: ['9999', '00000'],
   },
 ]; 

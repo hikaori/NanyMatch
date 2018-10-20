@@ -21,17 +21,17 @@ export default class NaviItem extends Component{
 
   render(){
     const { isHovered } = this.state;
-    const { title, childs } = this.props;
+    const { title, subtitles } = this.props;
     return(
       <div>
         <div className="LowerItem" onMouseOver={this.handleHoverIn} onMouseLeave={this.handleHoverOut}>{ title }</div>
         {
           isHovered && (
             <ul>
-              {childs.map((subtitle) => (
-                <li key={subtitle} className="subtitle"
+              {subtitles.map((title) => (
+                <li key={title} className="subtitle"
                 >
-                  {subtitle}
+                  {title}
                 </li>
               ))}
             </ul>
