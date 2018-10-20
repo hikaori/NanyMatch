@@ -5,7 +5,7 @@ export default class TopPage extends Component {
     return (
       <div className="Container">
         <div className="TopPage">
-        Top page
+        === top =====
         </div>
       </div>
     )
