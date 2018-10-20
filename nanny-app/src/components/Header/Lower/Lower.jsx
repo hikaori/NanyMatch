@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import '../Lower/LowerItem.scss'
-import LowerItem from './LowerItem/LowerItem';
+import '../Lower/Lower.scss'
+import NaviItem from './NaviItem/NaviItem.jsx';
 
 export default class Lower extends Component{
   render(){
@@ -8,7 +8,7 @@ export default class Lower extends Component{
       <div>
         <div>Logo</div>
         <ul className="Lower">
-          <LowerItem title={ 'About us' } subtitles={ 'children' }/>
+          <NaviItem title={ 'About us' } subtitles={ 'children' }/>
           <li>About us</li>
           <li>Faind a nanny</li>
           <li>Faind a family</li>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './LowerItem.scss';
+import './NaviItem.scss';
 
-export default class LowerItem extends Component{
+export default class NaviItem extends Component{
 
   state = {
     isHovered: false,
