@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-
+import Container from '../Container/Container.jsx';
 export default class TopPage extends Component {
   render() {
     return (
-      <div className="Container">
+      <Container>
         <div className="TopPage">
         === top =====
         </div>
-      </div>
+      </Container>
     )
   }
 }
