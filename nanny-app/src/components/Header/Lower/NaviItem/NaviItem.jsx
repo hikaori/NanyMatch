@@ -1,53 +1,56 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './NaviItem.scss';
 import PropTypes from 'prop-types';
 
-export default class NaviItem extends Component{
-
+export default class NaviItem extends Component {
   state = {
-    isHovered: false,
-  }
-  
+    isHovered: false
+  };
+
   handleHoverIn = () => {
     this.setState({
       isHovered: true
     });
-  }
+  };
 
   handleHoverOut = () => {
     this.setState({
       isHovered: false
     });
-  }
+  };
 
-  render(){
+  render() {
     const { isHovered } = this.state;
-    const { title, subtitles } = this.props;
-    return(
+    const { title, subtitles, linkTo } = this.props;
+    return (
       <div>
-        <div className="LowerItem" onMouseOver={this.handleHoverIn} onMouseLeave={this.handleHoverOut}>{ title }</div>
-        {
-          isHovered && (
-            <ul>
-              {subtitles.map((title) => (
-                <li key={title} className="subtitle"
-                >
-                  {title}
-                </li>
-              ))}
-            </ul>
-          )
-        }
+        <div
+          className="LowerItem"
+          onMouseOver={this.handleHoverIn}
+          onMouseLeave={this.handleHoverOut}
+        >
+          <Link to={linkTo}> {title} </Link>
+        </div>
+        {isHovered && (
+          <ul>
+            {subtitles.map(title => (
+              <li key={title} className="subtitle">
+                {title}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
-    )
+    );
   }
 }
 
 NaviItem.PropTypes = {
-  title :PropTypes.string.isRequired,
-  subtitles:PropTypes.array,
-}
+  title: PropTypes.string.isRequired,
+  subtitles: PropTypes.array
+};
 
 NaviItem.defaultProps = {
-  subtitles :[]
-}
+  subtitles: []
+};

@@ -16,6 +16,7 @@ export default class Lower extends Component {
               key={naviItem.title}
               title={naviItem.title}
               subtitles={naviItem.subtitles}
+              linkTo={naviItem.linkTo}
             />
           ))}
         </div>
