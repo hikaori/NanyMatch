@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './NaviItem.scss';
+import PropTypes from 'prop-types';
 
 export default class NaviItem extends Component{
 
@@ -40,4 +41,13 @@ export default class NaviItem extends Component{
       </div>
     )
   }
+}
+
+NaviItem.PropTypes = {
+  title :PropTypes.string.isRequired,
+  subtitles:PropTypes.array,
+}
+
+NaviItem.defaultProps = {
+  subtitles :[]
 }

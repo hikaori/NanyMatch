@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NaviItem from './NaviItem/NaviItem.jsx';
 import { naviItems } from '../../../constants/naviItems.js';
+import PropTypes from 'prop-types';
 
 import '../Lower/Lower.scss'
 
@@ -22,4 +23,8 @@ export default class Lower extends Component{
       </div>
     )
   }
+}
+
+Lower.propTypes = {
+  NaviItem:PropTypes.object.isRequired,
 }
