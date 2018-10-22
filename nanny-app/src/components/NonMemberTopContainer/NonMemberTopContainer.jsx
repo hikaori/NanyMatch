@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import Slider from 'react-slick';
 import NannyItem from './NannyItem/NannyItem.jsx';
+import NFJStrength from './NFJStrength/NFJStrength';
 import { nannyDetails } from '../../constants/nannyDetails.js';
 import { Header, Footer } from '../';
 // index を読み込む時は省略できる。import { Header, Footer } from '../index'
@@ -55,6 +56,7 @@ export default class TopPage extends Component {
           </div>
           <button>Look For More Nannies</button>
         </div>
+        <NFJStrength />
         <Footer />
       </Fragment>
     );
