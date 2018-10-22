@@ -46,11 +46,12 @@ export default class NaviItem extends Component {
   }
 }
 
-NaviItem.PropTypes = {
-  title: PropTypes.string.isRequired,
+NaviItem.propTypes = {
+  title: PropTypes.string,
   subtitles: PropTypes.array
 };
 
 NaviItem.defaultProps = {
+  title: '',
   subtitles: []
 };

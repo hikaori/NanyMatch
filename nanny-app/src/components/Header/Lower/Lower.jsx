@@ -26,5 +26,8 @@ export default class Lower extends Component {
 }
 
 Lower.propTypes = {
-  NaviItem: PropTypes.object.isRequired
+  NaviItem: PropTypes.object
+};
+Lower.defaultProps = {
+  NaviItem: {}
 };
