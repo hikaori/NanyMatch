@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import NannyItem from './NannyItem/NannyItem.jsx';
 import NFJStrength from './NFJStrength/NFJStrength';
 import { nannyDetails } from '../../constants/nannyDetails.js';
-import { Header, Footer, HowItWorks } from '../';
+import { Header, Footer, HowItWorks, NFJReviewContainer } from '../';
 // index を読み込む時は省略できる。import { Header, Footer } from '../index'
 import './NonMemberTopContainer.scss';
 import 'slick-carousel/slick/slick.css';
@@ -58,6 +58,10 @@ export default class TopPage extends Component {
         </div>
         <NFJStrength />
         <HowItWorks />
+        <h2>Who We Are</h2>
+
+        <NFJReviewContainer />
+
         <Footer />
       </Fragment>
     );
