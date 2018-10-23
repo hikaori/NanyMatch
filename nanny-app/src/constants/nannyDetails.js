@@ -34,7 +34,7 @@ export const nannyDetails = [
   },
   {
     id: 3,
-    name: 'nanny2',
+    name: 'nanny3',
     imageUrl: 'nannyImage',
     workExperience: 'Education',
     availability: 'Live-Out',
