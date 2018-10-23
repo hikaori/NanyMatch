@@ -1,21 +1,31 @@
-import React, { Component } from 'react'
-import './Upper.scss'
-import twitterImage from './../../../assets/icons/twitter.svg'
-import facebookImage from './../../../assets/icons/facebook.svg'
+import React, { Component } from 'react';
+import './Upper.scss';
+import facebookImage from './../../../assets/icons/facebook.svg';
+import TwitterImage from './../../../assets/icons/twitter.svg';
+import instagram from './../../../assets/icons/instagram.svg';
+import search from './../../../assets/icons/search.svg';
 
 export default class Upper extends Component {
   render() {
     return (
-      <div className="Header-upper">
-        <div className="Header-sns-area">
+      <div className="Upper">
+        <div className="Upper-sns-area">
           <ul>
-            <li><img src={twitterImage} /></li>
-            <li><img src={facebookImage} /></li>
-            <li></li>
-            <li></li>
+            <li className="Upper-twitterImage">
+              <svg dangerouslySetInnerHTML={{ __html: TwitterImage }} />
+            </li>
+            <li className="Upper-facebook">
+              <img src={facebookImage} />
+            </li>
+            <li className="Upper-instagram">
+              <img src={instagram} />
+            </li>
+            <li className="Upper-search">
+              <img src={search} />
+            </li>
           </ul>
         </div>
-        <div className="Header-site-name">Nanny From Japan</div>
+        <h1 className="Header-site-name">Nanny From Japan</h1>
         <div className="Header-sign-area">
           <ul>
             <li>Sign In</li>
@@ -23,6 +33,6 @@ export default class Upper extends Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }
