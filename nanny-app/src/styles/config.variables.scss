@@ -7,7 +7,7 @@ $fontMiddle: 1.6rem;
 $fontSmall: 1.4rem;
 $smallPadding: 1.6rem;
 $specialFontFamily: 'Berkshire Swash', cursive;
-.baseButton {
+.button {
   padding: 1.6rem 3.4rem;
   background-color: $colorWhite;
   color: $colorBlue;
@@ -22,8 +22,13 @@ $specialFontFamily: 'Berkshire Swash', cursive;
     line-height: 2rem;
   }
 }
-.buttonLine {
-  @extend .baseButton;
+.button-showy {
+  @extend .button;
+  background-color: $colorBlue;
+  color: $colorWhite;
+}
+.button-line {
+  @extend .button;
   box-sizing: border-box;
   border: solid 2px $colorBlue;
 }
