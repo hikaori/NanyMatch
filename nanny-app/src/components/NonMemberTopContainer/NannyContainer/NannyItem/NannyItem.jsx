@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Button } from '../../../';
 
 export default class TopPage extends Component {
-  render(){
-
-    const { 
-      id ,
-      name ,
+  render() {
+    const {
+      id,
+      name,
       imageUrl,
       workExperience,
       availability,
@@ -14,7 +14,7 @@ export default class TopPage extends Component {
       live
     } = this.props;
 
-    return(
+    return (
       <div className="NannyItem">
         <img src={imageUrl} alt="ナニープロファイル写真" />
         <div>{name}</div>
@@ -23,8 +23,12 @@ export default class TopPage extends Component {
         <div>{wage}</div>
         <div>{comments}</div>
         <div>{live}</div>
-        <button>Learn About This Nanny</button>
+        <Button
+          hasBorder={true}
+          text={'Learn About This Nanny'}
+          toLink={'/about'}
+        />
       </div>
-    )
+    );
   }
 }

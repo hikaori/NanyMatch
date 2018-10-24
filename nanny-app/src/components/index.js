@@ -5,8 +5,10 @@ import HowItWorks from './NonMemberTopContainer/HowItWorks/HowItWorks';
 import HowItWorksItem from './NonMemberTopContainer/HowItWorks/HowItWorksItem/HowItWorksItem';
 import NFJReviewContainer from './NonMemberTopContainer/NFJReviewContainer/NFJReviewContainer';
 import NFJReviewItem from './NonMemberTopContainer/NFJReviewContainer/NFJReviewItem/NFJReviewItem';
+import Button from './Button/Button';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+
 export {
   NonMemberTopContainer,
   NannyContainer,
@@ -15,6 +17,7 @@ export {
   HowItWorksItem,
   NFJReviewItem,
   NFJReviewContainer,
+  Button,
   Header,
   Footer
 };
