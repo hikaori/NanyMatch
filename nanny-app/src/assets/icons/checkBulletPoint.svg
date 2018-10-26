@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #44bbf2;
+      }
+
+      .cls-2 {
+        fill: #c22047;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Check_Bullet_Point" data-name="Check Bullet Point" transform="translate(-83 -1587.938)">
+    <g id="Ellipse" class="cls-1" transform="translate(83 1587.938)">
+      <circle class="cls-3" cx="16" cy="16" r="16"/>
+      <circle class="cls-4" cx="16" cy="16" r="15.5"/>
+    </g>
+    <path id="Check" class="cls-2" d="M5.75,10,0,4.25,1.167,3.083l4.583,4.5L13.333,0,14.5,1.167Z" transform="translate(92 1598.938)"/>
+  </g>
+</svg>

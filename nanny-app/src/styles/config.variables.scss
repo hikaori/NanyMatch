@@ -2,10 +2,13 @@ $colorLightBlue: #e4f5fd;
 $colorBlue: #44bbf2;
 $colorBlack: #333333;
 $colorWhite: #fff;
+$colorRed: #c22047;
 $fontBig: 2.4rem;
 $fontMiddle: 1.6rem;
 $fontSmall: 1.4rem;
-$smallPadding: 1.6rem;
+$spaceBase: 0.8rem;
+$spaceSmall: 1.6rem;
+$spaceContainer: 8rem;
 $specialFontFamily: 'Berkshire Swash', cursive;
 .button {
   padding: 1.6rem 3.4rem;
@@ -22,7 +25,7 @@ $specialFontFamily: 'Berkshire Swash', cursive;
     line-height: 2rem;
   }
 }
-.button-showy {
+.button-showly {
   @extend .button;
   background-color: $colorBlue;
   color: $colorWhite;

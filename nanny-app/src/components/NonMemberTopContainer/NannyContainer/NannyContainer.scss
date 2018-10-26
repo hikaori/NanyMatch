@@ -1,0 +1,36 @@
+@import '../../../styles/config.variables.scss';
+.NannyItemContainer {
+  margin-top: $spaceContainer;
+}
+.NannyItemContainer-nannyArea {
+  width: 89.6rem;
+  margin: 0 auto;
+  .slick-prev {
+    left: -9.2rem;
+  }
+  .slick-next {
+    right: -9.2rem;
+  }
+  .slick-next:before {
+    content: '';
+    display: inline-block;
+    width: 2.569rem;
+    height: 4rem;
+    background-image: url(../../../assets/icons/angle-right-solid.svg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .slick-prev:before {
+    content: '';
+    display: inline-block;
+    width: 2.569rem;
+    height: 4rem;
+    background-image: url(../../../assets/icons/angle-left-solid.svg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+.NannyItemContainer-more {
+  text-align: center;
+  padding-top: 4rem;
+}

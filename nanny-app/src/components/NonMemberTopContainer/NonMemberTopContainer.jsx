@@ -11,35 +11,34 @@ import {
 import './NonMemberTopContainer.scss';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-export default class TopPage extends Component {
+import Button from '../Button/Button';
+export default class NonMemberTopContainer extends Component {
   render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 3
-    };
     return (
       <Fragment>
         <Header />
-        <div className="TopPage">
-          <img src="" alt="" />
-          <div className="Top">
-            <div>
-              We are Nanny From Japan. We bring you the relief you need, when
-              you need it.
+        <div className="NonMemberTopContainer">
+          <div className="NonMemberTopContainer-hero">
+            <div className="NonMemberTopContainer-copyContainer">
+              <div className="NonMemberTopContainer-copy">
+                We are Nanny From Japan.
+                <br /> We bring you the relief you need,
+                <br /> when you need it.
+              </div>
+              <Button
+                hasBorder={false}
+                isshowly={false}
+                text={'Let’s Go Find Your Nanny'}
+                toLink={'/about'}
+              />
             </div>
-            <button className="">Let's Go Find Your Nanny</button>
           </div>
+          <NannyContainer />
+          <NFJStrength />
+          <HowItWorks />
+          <h2>Who We Are</h2>
+          <NFJReviewContainer />
         </div>
-        <NannyContainer />
-        <NFJStrength />
-        <HowItWorks />
-        <h2>Who We Are</h2>
-
-        <NFJReviewContainer />
-
         <Footer />
       </Fragment>
     );

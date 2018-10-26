@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from '../../../';
+import './NannyItem.scss';
 
 export default class TopPage extends Component {
   render() {
@@ -16,13 +17,17 @@ export default class TopPage extends Component {
 
     return (
       <div className="NannyItem">
-        <img src={imageUrl} alt="ナニープロファイル写真" />
-        <div>{name}</div>
-        <div>{workExperience}</div>
-        <div>{availability}</div>
-        <div>{wage}</div>
-        <div>{comments}</div>
-        <div>{live}</div>
+        <div className="NannyItem-image">
+          <img src={imageUrl} alt="ナニープロファイル写真" />
+        </div>
+        <div className="NannyItem-details">
+          <div className="NannyItem-name">{name}</div>
+          <div className="NannyItem-list">{workExperience}</div>
+          <div className="NannyItem-list">{availability}</div>
+          <div className="NannyItem-list">{wage}</div>
+          <div className="NannyItem-comment">{comments}</div>
+          <div className="NannyItem-live">{live}</div>
+        </div>
         <Button
           hasBorder={true}
           text={'Learn About This Nanny'}

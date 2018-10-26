@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Upper.scss';
 import facebookImage from './../../../assets/icons/facebook.svg';
-import TwitterImage from './../../../assets/icons/twitter.svg';
+import twitterImage from './../../../assets/icons/twitter.svg';
 import instagram from './../../../assets/icons/instagram.svg';
 import search from './../../../assets/icons/search.svg';
 
@@ -12,7 +12,7 @@ export default class Upper extends Component {
         <div className="Upper-sns-area">
           <ul>
             <li className="Upper-twitterImage">
-              <svg dangerouslySetInnerHTML={{ __html: TwitterImage }} />
+              <img src={twitterImage} />
             </li>
             <li className="Upper-facebook">
               <img src={facebookImage} />

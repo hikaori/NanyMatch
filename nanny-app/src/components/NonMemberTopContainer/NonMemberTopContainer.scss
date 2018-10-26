@@ -1,3 +1,28 @@
-.NannyItemContainer{
-
+@import '../../styles/config.variables.scss';
+.NonMemberTopContainer {
+  h2 {
+    text-align: center;
+    font-family: $specialFontFamily;
+    color: $colorBlue;
+  }
+}
+.NonMemberTopContainer-hero {
+  margin: 0 auto;
+  background-image: url(../../assets/images/home_hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  background-position: left 0px top -266px;
+  position: relative;
+}
+.NonMemberTopContainer-copyContainer {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  font-size: $fontBig;
+  color: $colorWhite;
+  font-weight: 100;
+}
+.NonMemberTopContainer-copy {
+  padding-bottom: $spaceSmall;
 }

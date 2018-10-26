@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import nFJLogoImageUrl from '../../assets/icons/twitter.svg';
+// import nFJLogoImageUrl from '../../assets/icons/twitter.svg';
 // import facebookImageUrl from '../../assets/icons/twitter.svg';
 // import twitterImageUrl from '../../assets/icons/twitter.svg';
 // import instagramImageUrl from '../../assets/icons/twitter.svg';

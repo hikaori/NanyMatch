@@ -1,0 +1,50 @@
+@import '../../../../styles/config.variables.scss';
+.NannyItem {
+  margin: 0 0.8rem;
+  text-align: center;
+  button {
+    width: 100%;
+  }
+}
+.NannyItem-image {
+  img {
+    width: 100%;
+  }
+}
+.NannyItem-details {
+  text-align: left;
+  .NannyItem-name {
+    font-size: $fontBig;
+  }
+  .NannyItem-list {
+    font-size: $fontMiddle;
+    position: relative;
+    padding-left: 4.1%;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin-top: -0.2rem;
+      width: 0.4rem;
+      height: 0.4rem;
+      border-radius: 50%;
+      display: inline-block;
+      background-color: $colorRed;
+    }
+  }
+  .NannyItem-comment {
+    font-size: $fontSmall;
+  }
+  .NannyItem-live {
+    font-size: $fontMiddle;
+    &::before {
+      content: '';
+      width: 4.1%;
+      height: 2rem;
+      display: inline-block;
+      margin-right: 1rem;
+      background: url(../../../../assets/icons/map.svg) no-repeat 50% 100%;
+    }
+  }
+}

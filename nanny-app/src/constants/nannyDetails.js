@@ -1,8 +1,12 @@
+import Nanny1ImgUrl from '../assets/images/nanny1_placeholder.jpg';
+import Nanny2ImgUrl from '../assets/images/nanny2_placeholder.jpg';
+import Nanny3ImgUrl from '../assets/images/nanny3_placeholder.jpg';
+
 export const nannyDetails = [
   {
     id: 0,
     name: 'nanny0',
-    imageUrl: 'nannyImage',
+    imageUrl: Nanny3ImgUrl,
     workExperience: 'Education',
     availability: 'Live-Out',
     wage: 13,
@@ -13,7 +17,7 @@ export const nannyDetails = [
   {
     id: 1,
     name: 'nanny1',
-    imageUrl: 'nannyImage',
+    imageUrl: Nanny1ImgUrl,
     workExperience: 'Education',
     availability: 'Live-Out',
     wage: 13,
@@ -24,7 +28,7 @@ export const nannyDetails = [
   {
     id: 2,
     name: 'nanny2',
-    imageUrl: 'nannyImage',
+    imageUrl: Nanny2ImgUrl,
     workExperience: 'Education',
     availability: 'Live-Out',
     wage: 13,
@@ -35,7 +39,7 @@ export const nannyDetails = [
   {
     id: 3,
     name: 'nanny3',
-    imageUrl: 'nannyImage',
+    imageUrl: Nanny3ImgUrl,
     workExperience: 'Education',
     availability: 'Live-Out',
     wage: 13,
