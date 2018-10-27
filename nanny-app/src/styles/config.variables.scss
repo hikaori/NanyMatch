@@ -10,28 +10,3 @@ $spaceBase: 0.8rem;
 $spaceSmall: 1.6rem;
 $spaceContainer: 8rem;
 $specialFontFamily: 'Berkshire Swash', cursive;
-.button {
-  padding: 1.6rem 3.4rem;
-  background-color: $colorWhite;
-  color: $colorBlue;
-  font-size: $fontMiddle;
-  width: 25.4rem;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 0.8rem;
-  box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
-  span {
-    height: 2rem;
-    line-height: 2rem;
-  }
-}
-.button-showly {
-  @extend .button;
-  background-color: $colorBlue;
-  color: $colorWhite;
-}
-.button-line {
-  @extend .button;
-  box-sizing: border-box;
-  border: solid 2px $colorBlue;
-}
