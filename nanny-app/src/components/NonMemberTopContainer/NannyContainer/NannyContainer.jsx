@@ -38,9 +38,9 @@ export default class NannyContainer extends Component {
         <div className="NannyItemContainer-more">
           <Button
             hasBorder={false}
+            isShowly={true}
             text={'Look For More Nannies'}
             toLink={'/about'}
-            isShowly={true}
           />
         </div>
       </div>

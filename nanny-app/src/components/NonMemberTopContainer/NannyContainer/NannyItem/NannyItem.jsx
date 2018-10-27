@@ -30,6 +30,7 @@ export default class TopPage extends Component {
         </div>
         <Button
           hasBorder={true}
+          isShowly={false}
           text={'Learn About This Nanny'}
           toLink={'/about'}
         />
