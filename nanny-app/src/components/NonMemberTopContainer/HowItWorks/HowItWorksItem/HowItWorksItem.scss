@@ -25,6 +25,12 @@ body {
     > span {
       border-left: none;
     }
+    .HowItWorksItem-Num {
+      &::before {
+        content: url(../../../../assets/icons/check_white.svg);
+        width: 1.45rem;
+      }
+    }
   }
 }
 .HowItWorksItem-Num {
@@ -42,11 +48,5 @@ body {
     counter-increment: stepNum;
     content: counter(stepNum);
     color: $colorWhite;
-  }
-  &:last-child {
-    &::before {
-      content: url(../../../../assets/icons/check_white.svg);
-      width: 1.45rem;
-    }
   }
 }
