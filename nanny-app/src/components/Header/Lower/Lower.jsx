@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NaviItem from './NaviItem/NaviItem.jsx';
 import { naviItems } from '../../../constants/naviItems.js';
-import logo from '../../../assets/icons/NFJLogo_white-comp.svg';
+import logo from '../../../assets/icons/NFJLogo.svg';
 import PropTypes from 'prop-types';
 
 import '../Lower/Lower.scss';

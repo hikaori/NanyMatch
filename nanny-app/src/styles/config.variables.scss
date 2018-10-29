@@ -6,9 +6,46 @@ $colorGray: #808080;
 $colorRed: #c22047;
 $fontBig: 2.4rem;
 $fontSemiMiddle: 1.6rem;
+$fontFooterTitle: 1.8rem;
 $fontSmall: 1.4rem;
 $fontMiddle: 2.4rem;
 $spaceBase: 0.8rem;
 $spaceSmall: 1.6rem;
 $spaceContainer: 8rem;
 $specialFontFamily: 'Berkshire Swash', cursive;
+
+@mixin icon {
+  font-family: 'icomoon';
+  color: $colorBlue;
+  @content;
+}
+.twitter {
+  &::before {
+    @include icon();
+    content: '\ea96';
+  }
+}
+.facebookIcon {
+  &::before {
+    @include icon();
+    content: '\ea90';
+  }
+}
+.instagram {
+  &::before {
+    @include icon();
+    content: '\ea92';
+  }
+}
+.search {
+  &::before {
+    @include icon();
+    content: '\e986';
+  }
+}
+.nfjLogo {
+  &::before {
+    @include icon();
+    content: '\e901';
+  }
+}

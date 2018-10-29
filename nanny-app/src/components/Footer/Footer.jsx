@@ -1,9 +1,10 @@
 import React, { Component, Fragment } from 'react';
-// import nFJLogoImageUrl from '../../assets/icons/twitter.svg';
-// import facebookImageUrl from '../../assets/icons/twitter.svg';
-// import twitterImageUrl from '../../assets/icons/twitter.svg';
-// import instagramImageUrl from '../../assets/icons/twitter.svg';
-// import instagramImageUrl from '../../assets/icons/twitter.svg';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/icons/NFJLogo_white.svg';
+import cosLogo from '../../assets/images/companyLogo_COS.png';
+import hoikupediaLogo from '../../assets/images/companyLogo_Hoikupedia.png';
+import nadeshiko from '../../assets/images/companyLogo_Nadeshiko.png';
+import youjiEigo from '../../assets/images/companyLogo_grey_YoujiEigo.png';
 import './Footer.scss';
 
 export default class Footer extends Component {
@@ -11,69 +12,97 @@ export default class Footer extends Component {
     return (
       <Fragment>
         <div className="Footer">
-          <div>
-            <div>Our Office</div>
+          <div className="coInfo">
             <div>
-              Suite 225 – 314 West Cordova Street <br />
-              Vancouver, BC, Canada <br />
-              V6B 1E8
+              <div className="title">Our Office</div>
+              <div>
+                Suite 225 – 314 West Cordova Street <br />
+                Vancouver, BC, Canada <br />
+                V6B 1E8
+              </div>
+            </div>
+            <div>
+              <div className="title contact">Contact Us</div>
+              <div>
+                Phone:
+                <br /> +1 (000) 000-0000
+              </div>
+              <div>
+                E-mail:
+                <br /> info@nannyfromjapan.com
+              </div>
             </div>
           </div>
-          <div>
-            <div>Contact Us</div>
-            <div>
-              Phone:
-              <br /> +1 (000) 000-0000
-            </div>
-            <div>
-              E-mail:
-              <br /> info@nannyfromjapan.com
-            </div>
-          </div>
-          {/* <img src={nFJLogoImageUrl} alt="Nanny From Japan logo" />
-          <div>
-            <div>
-              <div>
-                <img src={facebookImageUrl} alt="Nanny From Japan facebook" />
-              </div>
-              <div>
-                <img src={twitterImageUrl} alt="Nanny From Japan twitter" />
-              </div>
-              <div>
-                <img src={instagramImageUrl} alt="Nanny From Japan instagram" />
-              </div>
+          <div className="partnership">
+            <img src={logo} alt="Nanny From Japan logo" />
+            <div className="coName">Nanny From Japan</div>
+            <div className="sns">
+              <div className="facebookIcon" />
+              <div className="twitter" />
+              <div className="instagram" />
             </div>
             <div>Proudly Partner With:</div>
             <ul>
               <li>
-                <img src={cosLogoImageUrl} alt="Nanny From Japan logo" />
+                <a href="//cosvancouver.com/">
+                  <img src={cosLogo} alt="COS Educational Consulting Inc" />
+                </a>
               </li>
               <li>
-                <img src={instagramImageUrl} alt="Nanny From Japan logo" />
+                <a href="//ryugaku.hoikupedia.com/">
+                  <img src={hoikupediaLogo} alt="hoikupedia" />
+                </a>
               </li>
               <li>
-                <img src={instagramImageUrl} alt="Nanny From Japan logo" />
+                <a href="//nadeshikoryugaku.com/">
+                  <img src={nadeshiko} alt="nadeshiko" />
+                </a>
               </li>
               <li>
-                <img src={instagramImageUrl} alt="Nanny From Japan logo" />
+                <a href="//youjieigo.com/">
+                  <img src={youjiEigo} alt="youjiEigo" />
+                </a>
               </li>
             </ul>
-            <div>Sitemap</div>
+          </div>
+          <div className="sitemap">
+            <div className="title">Sitemap</div>
             <ul>
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Find A Nanny</li>
-              <li>Find A Family</li>
-              <li>How It Works</li>
-              <li>Fees</li>
-              <li>FAQ</li>
-              <li>Contact Us</li>
-              <li>Privacy & Policy</li>
-              <li>Sign In</li>
-              <li>Sign Up</li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li>
+                <Link to="/findNanny">Find A Nanny</Link>
+              </li>
+              <li>
+                <Link to="/findFamily">Find A Family</Link>
+              </li>
+              <li>
+                <Link to="/howItWorks">How It Works</Link>
+              </li>
+              <li>
+                <Link to="/fees">Fees</Link>
+              </li>
+              <li>
+                <Link to="/faq">FAQ</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Privacy & Policy</Link>
+              </li>
+              <li>
+                <Link to="/signIn">Sign In</Link>
+              </li>
+              <li>
+                <Link to="/signUp">Sign Up</Link>
+              </li>
             </ul>
-          </div> */}
-          <div />
+          </div>
         </div>
       </Fragment>
     );
