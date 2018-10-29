@@ -11,18 +11,10 @@ export default class Upper extends Component {
       <div className="Upper">
         <div className="Upper-sns-area">
           <ul>
-            <li className="Upper-twitterImage">
-              <img src={twitterImage} />
-            </li>
-            <li className="Upper-facebook">
-              <img src={facebookImage} />
-            </li>
-            <li className="Upper-instagram">
-              <img src={instagram} />
-            </li>
-            <li className="Upper-search">
-              <img src={search} />
-            </li>
+            <li className="icon Upper-twitter" />
+            <li className="icon Upper-facebook" />
+            <li className="icon Upper-instagram" />
+            <li className="icon Upper-search" />
           </ul>
         </div>
         <h1 className="Header-site-name">Nanny From Japan</h1>

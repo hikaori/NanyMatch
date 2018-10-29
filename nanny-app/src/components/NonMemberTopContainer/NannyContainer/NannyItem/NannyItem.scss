@@ -39,12 +39,14 @@
   .NannyItem-live {
     font-size: $fontMiddle;
     &::before {
-      content: '';
+      font-family: 'icomoon';
+      content: '\e947';
+      color: $colorBlue;
       width: 4.1%;
       height: 2rem;
       display: inline-block;
       margin-right: 1rem;
-      background: url(../../../../assets/icons/map.svg) no-repeat 50% 100%;
+      // background: url(../../../../assets/icons/map.svg) no-repeat 50% 100%;
     }
   }
 }

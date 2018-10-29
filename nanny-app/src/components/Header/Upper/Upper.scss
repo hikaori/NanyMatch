@@ -37,4 +37,28 @@
       }
     }
   }
+  .icon {
+    font-family: 'icomoon';
+    color: $colorBlue;
+  }
+  .Upper-twitter {
+    &::before {
+      content: '\ea96';
+    }
+  }
+  .Upper-facebook {
+    &::before {
+      content: '\ea90';
+    }
+  }
+  .Upper-instagram {
+    &::before {
+      content: '\ea92';
+    }
+  }
+  .Upper-search {
+    &::before {
+      content: '\e986';
+    }
+  }
 }

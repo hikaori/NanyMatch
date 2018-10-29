@@ -26,7 +26,7 @@ export default class TopPage extends Component {
           <div className="NannyItem-list">{availability}</div>
           <div className="NannyItem-list">{wage}</div>
           <div className="NannyItem-comment">{comments}</div>
-          <div className="NannyItem-live">{live}</div>
+          <div className="NannyItem-live icon">{live}</div>
         </div>
         <Button
           hasBorder={true}

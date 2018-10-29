@@ -64,7 +64,10 @@
     "pre-commit": "lint-staged"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": "warn"
+    }
   },
   "browserslist": [
     ">0.2%",
