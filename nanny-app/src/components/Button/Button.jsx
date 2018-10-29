@@ -8,8 +8,7 @@ export default class Button extends Component {
     const { hasBorder, text, toLink, isShowly } = this.props;
     if (!hasBorder && !isShowly) {
       button = <button className="button">{text}</button>;
-    }
-    if (!hasBorder && isShowly) {
+    } else if (!hasBorder && isShowly) {
       button = <button className="button-showly">{text}</button>;
     } else {
       button = <button className="button-line">{text}</button>;
