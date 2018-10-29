@@ -24,24 +24,27 @@ export default class NaviItem extends Component {
     const { isHovered } = this.state;
     const { title, subtitles, linkTo } = this.props;
     return (
-      <div>
+      <div className="NaviItem">
         <div
-          className="NaviItem"
+          className="NaviItem-title"
           onMouseOver={this.handleHoverIn}
           onMouseLeave={this.handleHoverOut}
         >
-          <Link to={linkTo}> {title} </Link>
-        </div>
-        <div>
-          {isHovered && (
-            <ul className="NaviItem-subtitles">
-              {subtitles.map(title => (
-                <li key={title} className="subtitle">
-                  {title}
-                </li>
-              ))}
-            </ul>
-          )}
+          <Link to={linkTo}>
+            {' '}
+            {title}
+            <div>
+              {isHovered && (
+                <ul className="NaviItem-subtitles">
+                  {subtitles.map(({ title, linkTo }) => (
+                    <li key={title} className="subtitle">
+                      <Link to={linkTo}> {title} </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </Link>
         </div>
       </div>
     );

@@ -1,11 +1,16 @@
 @import '../../../../styles/config.variables.scss';
 .NaviItem {
-  ul {
-    z-index: 10;
-  }
+  z-index: 10;
 }
 .NaviItem-subtitles {
-  z-index: 10;
   background-color: $colorLightBlue;
   padding: 18px;
+  max-width: 150px;
+  .subtitle {
+    a {
+      &:hover {
+        color: white;
+      }
+    }
+  }
 }
