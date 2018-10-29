@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from 'react';
+import './NFJReviewItem.scss';
 export default class NFJReviewItem extends Component {
   render() {
     const { reviewer, reviewcomment } = this.props;
     return (
-      <Fragment className="NFJReviewItem">
-        <div className="NFJReview-comment">
-          <div>{reviewcomment}</div>
-          <div>{reviewer}</div>
+      <Fragment>
+        <div className="NFJReviewItem">
+          <div className="comment">{reviewcomment}</div>
+          <div className="reviewer">{reviewer}</div>
         </div>
       </Fragment>
     );

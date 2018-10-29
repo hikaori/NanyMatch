@@ -17,7 +17,7 @@
     font-size: $fontBig;
   }
   .NannyItem-list {
-    font-size: $fontMiddle;
+    font-size: $fontSemiMiddle;
     position: relative;
     padding-left: 4.1%;
     &::before {
@@ -37,7 +37,7 @@
     font-size: $fontSmall;
   }
   .NannyItem-live {
-    font-size: $fontMiddle;
+    font-size: $fontSemiMiddle;
     &::before {
       font-family: 'icomoon';
       content: '\e947';
