@@ -5,6 +5,7 @@ import {
   Footer,
   NannyContainer,
   HowItWorks,
+  WhoWeAer,
   NFJReviewContainer
 } from '../';
 // index を読み込む時は省略できる。import { Header, Footer } from '../index'
@@ -36,7 +37,7 @@ export default class NonMemberTopContainer extends Component {
           <NannyContainer />
           <NFJStrength />
           <HowItWorks />
-          <h2>Who We Are</h2>
+          <WhoWeAer />
           <NFJReviewContainer />
         </div>
         <Footer />

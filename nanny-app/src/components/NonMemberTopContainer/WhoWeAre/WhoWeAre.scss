@@ -1,0 +1,19 @@
+@import '../../../styles/config.variables.scss';
+.WhoWeAre {
+  text-align: center;
+  background-color: $colorLightBlue;
+  padding-top: $spaceContainer;
+  padding-bottom: $spaceContainer;
+  p {
+    margin: 1.6rem auto;
+    width: 66%;
+  }
+  img {
+    margin: 0 auto;
+    display: block;
+    width: 43%;
+    border-radius: 0.8rem;
+    border: solid 1px $colorBlue;
+    margin-bottom: 2.4rem;
+  }
+}
