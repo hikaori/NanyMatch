@@ -6,6 +6,7 @@ import HowItWorksItem from './NonMemberTopContainer/HowItWorks/HowItWorksItem/Ho
 import WhoWeAer from './NonMemberTopContainer/WhoWeAre/WhoWeAre';
 import NFJReviewContainer from './NonMemberTopContainer/NFJReviewContainer/NFJReviewContainer';
 import NFJReviewItem from './NonMemberTopContainer/NFJReviewContainer/NFJReviewItem/NFJReviewItem';
+import SliderContainer from './SliderContainer/SliderContainer';
 import Button from './Button/Button';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
@@ -19,6 +20,7 @@ export {
   WhoWeAer,
   NFJReviewItem,
   NFJReviewContainer,
+  SliderContainer,
   Button,
   Header,
   Footer
