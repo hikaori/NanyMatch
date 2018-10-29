@@ -16,7 +16,7 @@ body {
     width: 5.7rem;
     position: relative;
   }
-  img {
+  .HowItWorksItem-image {
     width: 86%;
     border-radius: 0.8rem;
     border: solid 1px $colorBlue;
@@ -27,7 +27,8 @@ body {
     }
     .HowItWorksItem-Num {
       &::before {
-        content: url(../../../../assets/icons/check_white.svg);
+        font-family: 'icomoon';
+        content: '\e900';
         width: 1.45rem;
       }
     }

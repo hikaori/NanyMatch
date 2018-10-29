@@ -11,7 +11,7 @@ export default class HowItWorksItem extends Component {
         </span>
         <section>
           <h3>{title}</h3>
-          <img src={imageUrl} alt={title} />
+          <img className="HowItWorksItem-image" src={imageUrl} alt={title} />
           {buttonText && (
             <Button
               hasBorder={false}
