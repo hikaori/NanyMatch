@@ -26,14 +26,15 @@ export default class NaviItem extends Component {
     return (
       <div className="NaviItem">
         <div
-          className="NaviItem-title"
           onMouseOver={this.handleHoverIn}
           onMouseLeave={this.handleHoverOut}
         >
-          <Link to={linkTo}>
-            {title}
-            <div>
-              {isHovered && (
+          <div className="NaviItem-title">
+            <Link to={linkTo}>{title}</Link>
+          </div>
+          <div>
+            {isHovered === true &&
+              subtitles.length > 0 && (
                 <ul className="NaviItem-subtitles">
                   {subtitles.map(({ title, linkTo }) => (
                     <li key={title} className="subtitle">
@@ -42,8 +43,7 @@ export default class NaviItem extends Component {
                   ))}
                 </ul>
               )}
-            </div>
-          </Link>
+          </div>
         </div>
       </div>
     );
