@@ -31,7 +31,6 @@ export default class NaviItem extends Component {
           onMouseLeave={this.handleHoverOut}
         >
           <Link to={linkTo}>
-            {' '}
             {title}
             <div>
               {isHovered && (
