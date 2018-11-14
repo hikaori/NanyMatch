@@ -1,3 +1,69 @@
+@import '../../styles/config.variables.scss';
 .Footer {
-  text-align: center; 
-} 
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  font-size: $fontSmall;
+  background-color: $colorBlue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: $colorWhite;
+  .title {
+    font-size: $fontFooterTitle;
+    padding-bottom: $spaceBase;
+  }
+  .contact {
+    padding-top: 2.4rem;
+  }
+  .coInfo {
+    width: 21%;
+    padding-right: 5%;
+    text-align: right;
+  }
+  .partnership {
+    font-size: $fontFooterTitle;
+    img {
+      height: 7.2rem;
+    }
+    li {
+      margin-top: 2.4rem;
+    }
+    li img {
+      height: auto;
+    }
+    li a {
+      display: inline-block;
+    }
+    .coName {
+      font-size: $fontMiddle;
+      font-family: $specialFontFamily;
+      padding-top: 0.8rem;
+      padding-bottom: 4rem;
+    }
+    .sns {
+      font-size: $fontMiddle;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 4.8rem;
+    }
+    .facebookIcon::before,
+    .twitter::before,
+    .instagram::before {
+      color: $colorWhite;
+    }
+  }
+  .sitemap {
+    width: 21%;
+    padding-left: 5%;
+    text-align: left;
+    li {
+      padding-bottom: $spaceBase;
+    }
+    a {
+      color: $colorWhite;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,21 +1,23 @@
-import React, { Component } from 'react'
-import './Upper.scss'
-import twitterImage from './../../../assets/icons/twitter.svg'
-import facebookImage from './../../../assets/icons/facebook.svg'
+import React, { Component } from 'react';
+import './Upper.scss';
+import facebookImage from './../../../assets/icons/facebook.svg';
+import twitterImage from './../../../assets/icons/twitter.svg';
+import instagram from './../../../assets/icons/instagram.svg';
+import search from './../../../assets/icons/search.svg';
 
 export default class Upper extends Component {
   render() {
     return (
-      <div className="Header-upper">
-        <div className="Header-sns-area">
+      <div className="Upper">
+        <div className="Upper-sns-area">
           <ul>
-            <li><img src={twitterImage} /></li>
-            <li><img src={facebookImage} /></li>
-            <li></li>
-            <li></li>
+            <li className="icon Upper-twitter" />
+            <li className="icon Upper-facebook" />
+            <li className="icon Upper-instagram" />
+            <li className="icon Upper-search" />
           </ul>
         </div>
-        <div className="Header-site-name">Nanny From Japan</div>
+        <h1 className="Header-site-name">Nanny From Japan</h1>
         <div className="Header-sign-area">
           <ul>
             <li>Sign In</li>
@@ -23,6 +25,6 @@ export default class Upper extends Component {
           </ul>
         </div>
       </div>
-    )
+    );
   }
 }

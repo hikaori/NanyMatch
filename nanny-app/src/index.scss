@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600|Noto+Sans');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Nunito');
+@font-face {
+  font-family: 'icomoon';
+  src: url('./assets/fonts/icomoon.woff') format('woff');
+}
+
+@import './styles/config.mixins.scss';
 
 html {
   font-size: 62.5%;
@@ -7,8 +14,24 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Berkshire Swash', cursive;
+  font-family: 'Nunito', sans-serif;
   font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  // font-size: $fontBig;
+  font-size: 2.4rem;
+}
+p {
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 ul {

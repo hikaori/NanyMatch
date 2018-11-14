@@ -1,0 +1,25 @@
+@import '../../../styles/config.variables.scss';
+.HowItWorks {
+  display: flex;
+  padding-bottom: $spaceContainer;
+  padding-top: $spaceContainer;
+}
+
+.HowItWorks-titles {
+  width: 50%;
+  text-align: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  > div {
+    width: 64%;
+  }
+}
+.HowItWorks-items {
+  width: 50%;
+}

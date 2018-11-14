@@ -1,10 +1,64 @@
 @import '../../../styles/config.variables';
 
-.Header-upper{
+.Upper {
   background: $colorLightBlue;
   display: flex;
-  width: 100%;
-  ul{
+  color: $colorBlue;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  ul {
     display: flex;
+  }
+  .Header-site-name {
+    font-family: 'Berkshire Swash', cursive;
+  }
+  .Upper-sns-area {
+    width: 16%;
+    ul {
+      justify-content: space-between;
+      li {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          fill: currentColor;
+        }
+        svg path {
+          fill: currentColor;
+        }
+      }
+      .Upper-facebook {
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+  .icon {
+    font-family: 'icomoon';
+    color: $colorBlue;
+  }
+  .Upper-twitter {
+    &::before {
+      content: '\ea96';
+    }
+  }
+  .Upper-facebook {
+    &::before {
+      content: '\ea90';
+    }
+  }
+  .Upper-instagram {
+    &::before {
+      content: '\ea92';
+    }
+  }
+  .Upper-search {
+    &::before {
+      content: '\e986';
+    }
   }
 }

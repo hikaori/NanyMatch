@@ -1,3 +1,16 @@
-.NaviItems{
+@import '../../../styles/config.variables.scss';
+.Lower {
+  padding: $spaceSmall 10%;
+  color: $colorBlack;
+  font-size: $fontBig;
   display: flex;
+  justify-content: space-between;
+  align-items: start;
+  height: 6.4rem;
+  img {
+    width: 6.4rem;
+  }
+  a {
+    text-decoration: none;
+  }
 }

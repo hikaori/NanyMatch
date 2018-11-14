@@ -1,27 +1,54 @@
-
- export const naviItems = [
+export const naviItems = [
   {
     title: 'About us',
-    childs: ['1111', '2222'],
+    subtitles: [
+      { title: '1111', linkTo: '/' },
+      { title: '2222', linkTo: '/about' }
+    ],
+    linkTo: '/about'
+  },
+  {
+    title: 'Faind a Family',
+    subtitles: [],
+    linkTo: '/findAFamily'
   },
   {
     title: 'Faind a nanny',
-    childs: ['1111', '2222'],
+    subtitles: [
+      { title: '1111', linkTo: '/about' },
+      { title: '2222', linkTo: '/about' }
+    ],
+    linkTo: '/findANanny'
   },
   {
     title: 'How it works',
-    childs: ['1111', '2222'],
+    subtitles: [
+      { title: 'Procedure', linkTo: '/about' },
+      { title: 'Sponsoring The Nanny', linkTo: '/about' },
+      { title: 'LMIA Apprication Process', linkTo: '/about' },
+      { title: 'LMIA Apprication Fee', linkTo: '/about' }
+    ],
+    linkTo: ''
   },
   {
     title: 'Fees',
-    childs: ['1111', '2222'],
+    subtitles: [
+      { title: '1111', linkTo: '/about' },
+      { title: '2222', linkTo: '/about' }
+    ],
+    linkTo: ''
   },
   {
     title: 'FAQ',
-    childs: ['1111', '2222'],
+    subtitles: [],
+    linkTo: ''
   },
   {
     title: 'Contact Us',
-    childs: ['1111', '2222'],
-  },
-]; 
+    subtitles: [
+      { title: '1111', linkTo: '/about' },
+      { title: '2222', linkTo: '/about' }
+    ],
+    linkTo: ''
+  }
+];
